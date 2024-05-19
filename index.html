@@ -12781,7 +12781,7 @@ li.pulse.open > a.dropdown-toggle {
   font-family: monospace;
   min-height: 50px;
   -moz-box-shadow: 0px 6px 10px -1px #adadad;
-  -webkit-box-shadow: 0px 6px 10px -1px #adadad; 
+  -webkit-box-shadow: 0px 6px 10px -1px #adadad;
   box-shadow: 0px 6px 10px -1px #adadad;
   border-radius: 2px;
   position: absolute;
@@ -13116,7 +13116,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Stroke-Detection-and-Analysis"><strong>Stroke Detection and Analysis</strong><a class="anchor-link" href="#Stroke-Detection-and-Analysis">&#182;</a></h1>
+<h1 id="-**Stroke-Detection-and-Analysis**-"><center> **Stroke Detection and Analysis** </center><a class="anchor-link" href="#-**Stroke-Detection-and-Analysis**-">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13130,8 +13130,24 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>What is a stroke?</strong>
+Stroke is a critical medical condition that occurs when the blood supply to a part of the brain is interrupted, leading to brain damage and potential long-term disabilities.</p>
 <p>According to the World Health Organization (WHO) strokes happen to be the second leading cause of death globally, responsible for approximately 11% of total deaths. Similar to most other medical conditions, early detection and timely treatment are crucial to improving the survival rates and reducing the impact of stroke on patients' lives. However, according to the CDC, 80% of premature heart disease and strokes are preventable. Thus, we aim to assist in preventing strokes through early detection.</p>
 <p>This project focuses on developing machine learning models to help predict the occurrence of strokes based on various health-related/lifestyle features. The importance of this topic lies in its potential to provide healthcare professionals with advanced tools for early diagnosis and intervention, ultimately saving lives and improving the quality of care for stroke patients.</p>
+<p>Additionally, this project serves as a comprehensive tutorial that will guide users through the entire data science pipeline, which includes:</p>
+<ul>
+<li><p><strong><a href="https://en.wikipedia.org/wiki/Data_curation">Data Curation</a>, <a href="https://pieriantraining.com/parsing-data-in-python-a-tutorial-for-beginners/">Parsing</a>, and <a href="https://realpython.com/python-sqlite-sqlalchemy/">Management</a></strong>: Collecting, cleaning, and organizing the data necessary for analysis.</p>
+</li>
+<li><p><strong><a href="https://towardsdatascience.com/an-extensive-guide-to-exploratory-data-analysis-ddd99a03199e">Exploratory Data Analysis</a> (EDA)</strong>: Understanding the data through visualization and summary statistics to identify patterns and insights.</p>
+</li>
+<li><p><strong><a href="https://towardsdatascience.com/hypothesis-testing-with-python-step-by-step-hands-on-tutorial-with-practical-examples-e805975ea96e">Hypothesis Testing</a></strong>: Applying statistical tests to provide a robust analysis of the data.</p>
+</li>
+<li><p><strong><a href="https://towardsdatascience.com/machine-learning-introduction-a-comprehensive-guide-af6712cf68a3">Machine Learning</a></strong>: Building and training machine learning models to provide a robust analysis of the data.</p>
+</li>
+<li><p><strong><a href="https://hbr.org/2020/02/present-your-data-like-a-pro#:~:text=It&#39;s%20your%20job%20to%20explain,%E2%80%9CThis%20data%20shows%E2%80%A6%E2%80%9D&amp;text=These%20transitions%20can%20be%20as,audience&#39;s%20attention%20to%20those%20conclusions.">Curation of Insights</a></strong>: Communicating the findings and insights learned during the tutorial in a clear and impactful manner.</p>
+</li>
+</ul>
+<p>By following this tutorial, users will gain a thorough understanding of the data science workflow, from initial data handling to the final interpretation of results, with a specific focus on stroke prediction and prevention.</p>
 
 </div>
 </div>
@@ -13139,7 +13155,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Additional-Readings:">Additional Readings:<a class="anchor-link" href="#Additional-Readings:">&#182;</a></h3><p><strong>CDC Heart Attacks and Strokes Prevention:</strong> <a href="https://archive.cdc.gov/www_cdc_gov/vitalsigns/million-hearts/index.html#:~:text=About%2016%20million%20heart%20attacks,disease%20and%20strokes%20are%20preventable">https://archive.cdc.gov/www_cdc_gov/vitalsigns/million-hearts/index.html#:~:text=About%2016%20million%20heart%20attacks,disease%20and%20strokes%20are%20preventable</a>.</p>
+<h4 id="Preliminary-Research:-Before-taking-a-data-analysis-oriented-approach-to-this-topic,-we-wanted-to-gain-an-understanding-for-the-topic-itself-and-conduct-some-backround-research-so-we-could-best-figure-out-what-angles-to-analyze-our-topic-from.-Here-are-some-resources-we-read-up-on:"><strong>Preliminary Research:</strong> Before taking a data analysis oriented approach to this topic, we wanted to gain an understanding for the topic itself and conduct some backround research so we could best figure out what angles to analyze our topic from. Here are some resources we read up on:<a class="anchor-link" href="#Preliminary-Research:-Before-taking-a-data-analysis-oriented-approach-to-this-topic,-we-wanted-to-gain-an-understanding-for-the-topic-itself-and-conduct-some-backround-research-so-we-could-best-figure-out-what-angles-to-analyze-our-topic-from.-Here-are-some-resources-we-read-up-on:">&#182;</a></h4><ul>
+<li><p><a href="https://archive.cdc.gov/www_cdc_gov/vitalsigns/million-hearts/index.html#:~:text=About%2016%20million%20heart%20attacks,disease%20and%20strokes%20are%20preventable"><strong>CDC Heart Attacks and Strokes Prevention</strong></a>: Take a look at this link to discover more about populations at risk for stroke, learn about small lifestyle adjustments that can decrease the risk of having a stroke, and explore comprehensive recommendations for what governments, healthcare providers, and employers can do to reduce the overall incidence of strokes.</p>
+</li>
+<li><p><a href="https://www.heartandstroke.ca/stroke/what-is-stroke"><strong>What is a stroke?</strong></a>: 
+A stroke occurs when blood flow to a part of the brain is cut off, damaging brain cells. The impact of a stroke varies depending on which part of the brain is affected and how much damage is incurred. The two main types of stroke are Ischemic Stroke and Hemorrhagic Stroke. Explore this link to understand more about what a stroke is, including the various types of strokes and their causes.</p>
+</li>
+<li><p><a href="https://www.webmd.com/stroke/stroke"><strong>Heart Disease and Stroke</strong></a>: Stroke symptoms include unilateral numbness or weakness, sudden vision loss, speech difficulties, severe headaches, and loss of balance. If these signs are present, you should call 911 immediately as strokes require urgent medical attention. About half of all strokes can be prevented by managing risk factors such as high blood pressure, diabetes, and smoking. However, some risks, like age, gender, and genetic predisposition, cannot be modified. Regular medical check-ups can help identify and manage these risks to prevent potential strokes. Check this link out to learn more about the symptoms of a stroke and how to recognize it in others.</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -13181,14 +13205,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Collection">Data Collection<a class="anchor-link" href="#Data-Collection">&#182;</a></h2>
+<h2 id="-**Data-Collection**-"><center> **Data Collection** </center><a class="anchor-link" href="#-**Data-Collection**-">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For this tutorial, we used a dataset titled "healthcare-dataset-stroke-data.csv," which we downloaded from Kaggle. The dataset includes 5110 observations, each representing a patient, with relevant input parameters such as age, hypertension, BMI, and more. Some attributes are categorical, like smoking status, while others are continuous, like BMI. Since this dataset was obtained from Kaggle, we avoided techniques like web scraping, which often lead to messy data. However, we did perform data imputation, as discussed in the next section.</p>
+<p>For this tutorial, we used a dataset titled "<a href="https://www.kaggle.com/code/bhuvanchennoju/data-storytelling-auc-focus-on-strokes">healthcare-dataset-stroke-data.csv</a>," which we downloaded from Kaggle. The dataset includes 5110 observations, each representing a patient, with relevant input parameters such as age, hypertension, BMI, and more. Some attributes are categorical, like smoking status, while others are continuous, like BMI. Since this dataset was obtained from Kaggle, we avoided techniques like web scraping, which often lead to messy data. However, we did perform data imputation, as discussed in the next section.</p>
 
 </div>
 </div>
@@ -13196,7 +13220,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Processing">Data Processing<a class="anchor-link" href="#Data-Processing">&#182;</a></h2>
+<h3 id="Data-Processing"><strong>Data Processing</strong><a class="anchor-link" href="#Data-Processing">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14443,7 +14467,7 @@ Unique Stroke: [1 0]
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Exploratory-Data-Analysis">Exploratory Data Analysis<a class="anchor-link" href="#Exploratory-Data-Analysis">&#182;</a></h2>
+<h2 id="-**Exploratory-Data-Analysis**-"><center> **Exploratory Data Analysis** </center><a class="anchor-link" href="#-**Exploratory-Data-Analysis**-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15912,6 +15936,19 @@ weighted avg       0.92      0.78      0.83      1022
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Note-Regarding-Model-Optimization-Strategies:"><strong>Note Regarding Model Optimization Strategies:</strong><a class="anchor-link" href="#Note-Regarding-Model-Optimization-Strategies:">&#182;</a></h4><p>Although it seems that the performances of the models aren't exceptional, they could be much worse. First, it's important to note that there is a huge discrepancy in our data when it comes to those who've suffered from a stroke and those who haven't. With that said, before training the models, we had to balance the dataset to improve the model's performance. We chose to do this through SMOTEENN, which combines SMOTE and ENN to both oversample the minority class and clean the majority class. This combination helps balance the dataset while also improving the quality of the training data by removing potential noise and outliers. Additionally, for the Random Forest Model, we standardized our data to ensure that each feature contributes equally to the model, which also helped improve the overall performance. However, there is certainly room for improvement in the future like incorporating a larger dataset or using more complex machine learning algorithms.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Conclusions/-Final-Observations:"><strong>Conclusions/ Final Observations:</strong><a class="anchor-link" href="#Conclusions/-Final-Observations:">&#182;</a></h4><p>Having written this notebook we have gained a greater understanding of what a healthy lifestyle looks like. There are many factors that contribute to many different illnesses and with stroke being such a prevalent cause of death in the United States, it is important to really understand what is the causes of stroke.</p>
+<p>For more information on risks and factors of stroke, please refer to: <a href="https://www.nhlbi.nih.gov/health/stroke/causes#:~:text=Ischemic%20and%20hemorrhagic%20strokes%20share,disease%2C%20and%20carotid%20artery%20disease">https://www.nhlbi.nih.gov/health/stroke/causes#:~:text=Ischemic%20and%20hemorrhagic%20strokes%20share,disease%2C%20and%20carotid%20artery%20disease</a>. 
+This was a resource that served as an inspiration for our notebook in terms of corroborating our lens of focus and the variables we decided to analyze as factors of stroke.</p>
+<p>With our initial analysis we saw that a lot of the variables that we were examining were actually fairly related to the presence of stroke in a person. That said there were a few variables that we ruled out as not being correlated at all upon visual analysis. One of these factors, that was surprising to us as not being included as a cause of stroke, was gender. Oftentimes, it is the case that males are more prone to certain illnesses compared to females and vice versa, so seeing that this was not the case for stroke was something that was surprising to us as we were writing this notebook. Something else that we found to be interesting was that BMI was not as big of a factor when it came to the importance of other variables such as age, suggesting that some factors may be out of our control when it comes to preventing stroke, but other such as smoking status is something that is very much in our control.</p>
+<p>When conducting our hypothesis testing, we only conducted tests for the features that we hypothesized were related to stroke based on our visual analysis, and we concluded that everything that seemed to visually be a direct contributor to stroke in a person did in fact statistically prove to be a contributor. These main factors included: smoking status, hypertension, heart disease, age, marriage status, and work type.</p>
+<h4 id="Next-Steps:"><strong>Next Steps:</strong><a class="anchor-link" href="#Next-Steps:">&#182;</a></h4><p>For the next steps in our model, we would like to look at more factors of stroke in order to improve our models. There are obviously a lot more factors that could serve as contributors to whether a person has a stroke or not such as race, geographic location, wealth status, etc that would prove to be useful in our predictive models. Right now our models have a decent accuracy but since our F1 and precision are not that high that indicates we need to include more factors in our model to serve as features in our predictive function.</p>
 
 </div>
 </div>
